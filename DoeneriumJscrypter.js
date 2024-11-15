@@ -1,13 +1,11 @@
+// virustotale 0/77 atamayan maymunlar için
+
 const JsConfuser = require("js-confuser");
 const fs = require('fs');
 const colors = require('colors');
 const path = require('path');
 const { exec } = require('child_process');
-
-// virustotale 0/77 atamayan maymunlar için
-
 const inputFile = "./node_modules/input.js";
-
 const file = fs.readFileSync(inputFile, "utf-8");
 
 JsConfuser.obfuscate(file, {
